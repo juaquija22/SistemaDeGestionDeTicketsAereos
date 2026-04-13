@@ -14,7 +14,11 @@ public class DbContextFactory
             .AddEnvironmentVariables()
             .Build();
 
-        var connectionString = MySqlConnectionStringResolver.Resolve(config);
+        var connectionString = Environment.GetEnvironmentVariable("MYSQL_CONNECTION")
+                               ?? config.GetConnectionString("MySqlDB");
+
+        if (string.IsNullOrWhiteSpace(connectionString))
+            throw new InvalidOperationException("No se encontró una cadena de conexión válida (MySqlDB o MYSQL_CONNECTION).");
 
         var detectedVersion = MySqlVersionResolver.DetectVersion(connectionString);
         var minVersion = new Version(8, 0, 0);
