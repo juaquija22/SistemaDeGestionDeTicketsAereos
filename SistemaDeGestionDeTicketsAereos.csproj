@@ -25,4 +25,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\modules\ejemplo\Application\Interfaces\" />
+    <Folder Include="src\modules\ejemplo\Application\Services\" />
+    <Folder Include="src\modules\ejemplo\Application\UseCases\" />
+    <Folder Include="src\modules\ejemplo\Domain\aggregate\" />
+    <Folder Include="src\modules\ejemplo\Domain\Repositories\" />
+    <Folder Include="src\modules\ejemplo\Domain\valueObject\" />
+    <Folder Include="src\shared\configuration\" />
+  </ItemGroup>
 </Project>
