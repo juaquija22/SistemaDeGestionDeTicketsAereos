@@ -2832,19 +2832,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sierr\\.nuget\\packages\\": {}
+    "C:\\Users\\juaqu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sierr\\SistemaDeGestionDeTicketsAereos\\SistemaDeGestionDeTicketsAereos.csproj",
+      "projectUniqueName": "C:\\Users\\juaqu\\SistemaDeGestionDeTicketsAereos\\SistemaDeGestionDeTicketsAereos.csproj",
       "projectName": "SistemaDeGestionDeTicketsAereos",
-      "projectPath": "C:\\Users\\sierr\\SistemaDeGestionDeTicketsAereos\\SistemaDeGestionDeTicketsAereos.csproj",
-      "packagesPath": "C:\\Users\\sierr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sierr\\SistemaDeGestionDeTicketsAereos\\obj\\",
+      "projectPath": "C:\\Users\\juaqu\\SistemaDeGestionDeTicketsAereos\\SistemaDeGestionDeTicketsAereos.csproj",
+      "packagesPath": "C:\\Users\\juaqu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\juaqu\\SistemaDeGestionDeTicketsAereos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sierr\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\juaqu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
