@@ -1,12 +1,23 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.checkinChannel.Infrastructure.Entity
+namespace SistemaDeGestionDeTicketsAereos.src.modules.checkinChannel.Infrastructure.Entity;
+
+public sealed class CheckInChannelEntityConfiguration : IEntityTypeConfiguration<CheckInChannelEntity>
 {
-    public class CheckInChannelEntityConfiguration
+    public void Configure(EntityTypeBuilder<CheckInChannelEntity> builder)
     {
-        
+        builder.ToTable("CheckInChannel");
+
+        builder.HasKey(x => x.IdChannel);
+
+        builder.Property(x => x.IdChannel)
+            .HasColumnName("IdChannel")
+            .ValueGeneratedOnAdd();
+
+        builder.Property(x => x.ChannelName)
+            .HasColumnName("ChannelName")
+            .HasColumnType("varchar(50)")
+            .IsRequired();
     }
 }

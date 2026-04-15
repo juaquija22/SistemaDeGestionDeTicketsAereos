@@ -1,12 +1,23 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.role.Infrastructure.Entity
+namespace SistemaDeGestionDeTicketsAereos.src.modules.role.Infrastructure.Entity;
+
+public sealed class RoleEntityConfiguration : IEntityTypeConfiguration<RoleEntity>
 {
-    public class RoleEntityConfiguration
+    public void Configure(EntityTypeBuilder<RoleEntity> builder)
     {
-        
+        builder.ToTable("Role");
+
+        builder.HasKey(x => x.IdUserRole);
+
+        builder.Property(x => x.IdUserRole)
+            .HasColumnName("IdUserRole")
+            .ValueGeneratedOnAdd();
+
+        builder.Property(x => x.RoleName)
+            .HasColumnName("RoleName")
+            .HasColumnType("varchar(50)")
+            .IsRequired();
     }
 }

@@ -1,12 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace SistemaDeGestionDeTicketsAereos.src.modules.seatClass.Infrastructure.Entity;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.seatClass.Infrastructure.Entity
+public class SeatClassEntity
 {
-    public class SeatClassEntity
-    {
-        
-    }
+    public int IdClase { get; set; }
+    public string ClassName { get; set; } = string.Empty;
 }

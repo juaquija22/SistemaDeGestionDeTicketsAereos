@@ -1,12 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace SistemaDeGestionDeTicketsAereos.src.modules.fare.Infrastructure.Entity;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.fare.Infrastructure.Entity
+public class FareEntity
 {
-    public class FareEntity
-    {
-        
-    }
+    public int IdFare { get; set; }
+    public string FareName { get; set; } = string.Empty;
+    public decimal BasePrice { get; set; }
+    public int IdAirline { get; set; }
+    public DateOnly ValidFrom { get; set; }
+    public DateOnly ValidTo { get; set; }
+    public bool Active { get; set; }
+    public DateOnly? ExpirationDate { get; set; }
 }

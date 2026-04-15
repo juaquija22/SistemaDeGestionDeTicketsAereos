@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace SistemaDeGestionDeTicketsAereos.src.modules.customerEmail.Infrastructure.Entity;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.customerEmail.Infrastructure.Entity
+public class CustomerEmailEntity
 {
-    public class CustomerEmailEntity
-    {
-        
-    }
+    public int IdEmail { get; set; }
+    public int IdPerson { get; set; }
+    public string Email { get; set; } = string.Empty;
 }

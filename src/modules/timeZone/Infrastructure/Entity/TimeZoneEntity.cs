@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace SistemaDeGestionDeTicketsAereos.src.modules.timeZone.Infrastructure.Entity;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.timeZone.Infrastructure.Entity
+public class TimeZoneEntity
 {
-    public class TimeZoneEntity
-    {
-        
-    }
+    public int IdTimeZone { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public string UTCOffset { get; set; } = string.Empty;
 }

@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace SistemaDeGestionDeTicketsAereos.src.modules.country.Infrastructure.Entity;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.country.Infrastructure.Entity
+public class CountryEntity
 {
-    public class CountryEntity
-    {
-        
-    }
+    public int IdCountry { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public string ISOCode { get; set; } = string.Empty;
 }

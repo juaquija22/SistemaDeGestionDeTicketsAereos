@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace SistemaDeGestionDeTicketsAereos.src.modules.employee.Infrastructure.Entity;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.employee.Infrastructure.Entity
+public class EmployeeEntity
 {
-    public class EmployeeEntity
-    {
-        
-    }
+    public int IdEmployee { get; set; }
+    public int IdPerson { get; set; }
+    public int IdAirline { get; set; }
+    public int IdRole { get; set; }
 }

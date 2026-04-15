@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace SistemaDeGestionDeTicketsAereos.src.modules.customerPhone.Infrastructure.Entity;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.customerPhone.Infrastructure.Entity
+public class CustomerPhoneEntity
 {
-    public class CustomerPhoneEntity
-    {
-        
-    }
+    public int IdPhone { get; set; }
+    public int IdPerson { get; set; }
+    public string Phone { get; set; } = string.Empty;
 }

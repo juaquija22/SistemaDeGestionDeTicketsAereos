@@ -1,12 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace SistemaDeGestionDeTicketsAereos.src.modules.gender.Infrastructure.Entity;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.gender.Infrastructure.Entity
+public class GenderEntity
 {
-    public class GenderEntity
-    {
-        
-    }
+    public int IdGender { get; set; }
+    public string Description { get; set; } = string.Empty;
 }

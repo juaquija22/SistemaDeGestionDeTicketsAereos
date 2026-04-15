@@ -1,16 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SistemaDeGestionDeTicketsAereos.src.modules.flight.Infrastructure.Entity;
+using SistemaDeGestionDeTicketsAereos.src.modules.booking.Infrastructure.Entity;
 using SistemaDeGestionDeTicketsAereos.src.modules.systemStatus.Infrastructure.Entity;
 using SistemaDeGestionDeTicketsAereos.src.modules.user.Infrastructure.Entity;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.flightStatusHistory.Infrastructure.Entity;
+namespace SistemaDeGestionDeTicketsAereos.src.modules.bookingStatusHistory.Infrastructure.Entity;
 
-public sealed class FlightStatusHistoryEntityConfiguration : IEntityTypeConfiguration<FlightStatusHistoryEntity>
+public sealed class BookingStatusHistoryEntityConfiguration : IEntityTypeConfiguration<BookingStatusHistoryEntity>
 {
-    public void Configure(EntityTypeBuilder<FlightStatusHistoryEntity> builder)
+    public void Configure(EntityTypeBuilder<BookingStatusHistoryEntity> builder)
     {
-        builder.ToTable("FlightStatusHistory");
+        builder.ToTable("BookingStatusHistory");
 
         builder.HasKey(x => x.IdHistory);
 
@@ -18,8 +18,8 @@ public sealed class FlightStatusHistoryEntityConfiguration : IEntityTypeConfigur
             .HasColumnName("IdHistory")
             .ValueGeneratedOnAdd();
 
-        builder.Property(x => x.IdFlight)
-            .HasColumnName("IdFlight")
+        builder.Property(x => x.IdBooking)
+            .HasColumnName("IdBooking")
             .IsRequired();
 
         builder.Property(x => x.IdStatus)
@@ -40,9 +40,9 @@ public sealed class FlightStatusHistoryEntityConfiguration : IEntityTypeConfigur
             .HasColumnName("Observation")
             .HasColumnType("varchar(255)");
 
-        builder.HasOne<FlightEntity>()
+        builder.HasOne<BookingEntity>()
             .WithMany()
-            .HasForeignKey(x => x.IdFlight)
+            .HasForeignKey(x => x.IdBooking)
             .OnDelete(DeleteBehavior.Restrict);
 
         builder.HasOne<SystemStatusEntity>()

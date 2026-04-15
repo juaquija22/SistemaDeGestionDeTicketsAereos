@@ -1,12 +1,23 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.documentType.Infrastructure.Entity
+namespace SistemaDeGestionDeTicketsAereos.src.modules.documentType.Infrastructure.Entity;
+
+public sealed class DocumentTypeEntityConfiguration : IEntityTypeConfiguration<DocumentTypeEntity>
 {
-    public class DocumentTypeEntityConfiguration
+    public void Configure(EntityTypeBuilder<DocumentTypeEntity> builder)
     {
-        
+        builder.ToTable("DocumentType");
+
+        builder.HasKey(x => x.IdDocumentType);
+
+        builder.Property(x => x.IdDocumentType)
+            .HasColumnName("IdDocumentType")
+            .ValueGeneratedOnAdd();
+
+        builder.Property(x => x.Name)
+            .HasColumnName("Name")
+            .HasColumnType("varchar(50)")
+            .IsRequired();
     }
 }

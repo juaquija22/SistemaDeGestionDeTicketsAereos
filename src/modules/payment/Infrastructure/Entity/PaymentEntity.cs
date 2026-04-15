@@ -1,12 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace SistemaDeGestionDeTicketsAereos.src.modules.payment.Infrastructure.Entity;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.payment.Infrastructure.Entity
+public class PaymentEntity
 {
-    public class PaymentEntity
-    {
-        
-    }
+    public int IdPayment { get; set; }
+    public int IdBooking { get; set; }
+    public int IdPaymentMethod { get; set; }
+    public decimal Amount { get; set; }
+    public DateTime PaymentDate { get; set; }
+    public int IdStatus { get; set; }
 }

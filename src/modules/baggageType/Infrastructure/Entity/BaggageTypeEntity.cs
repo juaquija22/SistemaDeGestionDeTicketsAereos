@@ -1,12 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+namespace SistemaDeGestionDeTicketsAereos.src.modules.baggageType.Infrastructure.Entity;
 
-namespace SistemaDeGestionDeTicketsAereos.src.modules.baggageType.Infrastructure.Entity
+public class BaggageTypeEntity
 {
-    public class BaggageTypeEntity
-    {
-        
-    }
+    public int IdBaggageType { get; set; }
+    public string TypeName { get; set; } = string.Empty;
 }
