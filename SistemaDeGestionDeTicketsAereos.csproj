@@ -27,6 +27,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="src\modules\airportTimeZone\" />
+    <Folder Include="src\modules\airportTimeZone\Application\" />
+    <Folder Include="src\modules\airportTimeZone\Domain\" />
+    <Folder Include="src\modules\airportTimeZone\Infrastructure\" />
+    <Folder Include="src\modules\airportTimeZone\Infrastructure\Entity\" />
+    <Folder Include="src\modules\airportTimeZone\Ui\" />
     <Folder Include="src\modules\ejemplo\Application\Interfaces\" />
     <Folder Include="src\modules\ejemplo\Application\Services\" />
     <Folder Include="src\modules\ejemplo\Application\UseCases\" />

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sierr\\SistemaDeGestionDeTicketsAereos\\SistemaDeGestionDeTicketsAereos.csproj": {}
+    "C:\\Users\\USER\\Desktop\\SistemaDeGestionDeTicketsAereos\\SistemaDeGestionDeTicketsAereos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sierr\\SistemaDeGestionDeTicketsAereos\\SistemaDeGestionDeTicketsAereos.csproj": {
+    "C:\\Users\\USER\\Desktop\\SistemaDeGestionDeTicketsAereos\\SistemaDeGestionDeTicketsAereos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sierr\\SistemaDeGestionDeTicketsAereos\\SistemaDeGestionDeTicketsAereos.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\SistemaDeGestionDeTicketsAereos\\SistemaDeGestionDeTicketsAereos.csproj",
         "projectName": "SistemaDeGestionDeTicketsAereos",
-        "projectPath": "C:\\Users\\sierr\\SistemaDeGestionDeTicketsAereos\\SistemaDeGestionDeTicketsAereos.csproj",
-        "packagesPath": "C:\\Users\\sierr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sierr\\SistemaDeGestionDeTicketsAereos\\obj\\",
+        "projectPath": "C:\\Users\\USER\\Desktop\\SistemaDeGestionDeTicketsAereos\\SistemaDeGestionDeTicketsAereos.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\SistemaDeGestionDeTicketsAereos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sierr\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
